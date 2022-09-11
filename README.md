@@ -15,7 +15,6 @@ React + Vite + TypeScript
 ```
 node -v
 yarn -v
-vite -v
 ```
 
 こいつも参考にしよう
@@ -30,6 +29,8 @@ vite -v
 ```
 yarn install
 ```
+
+これによって yarn に書いておいた色々が install されるはず。今回使う vite もこれで入るはず。
 
 ```
 yarn dev
