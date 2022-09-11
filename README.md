@@ -4,6 +4,9 @@ React + Vite + TypeScript
 
 インターンで学んだことを友達に教えるために制作したレポジトリです。
 
+[React チュートリアル 1：犬画像ギャラリーを作ろう](https://zenn.dev/likr/articles/6be53ca64f29aa035f07)
+上記のチュートリアルを TypeScript + React で書きたい！
+
 ## セットアップ
 
 ### 前提
