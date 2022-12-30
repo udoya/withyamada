@@ -13,19 +13,24 @@ React + Vite + TypeScript
 
 ちゃんとバージョンが入ってるかな？
 入ってなかったら、検索しながら使えるようにしてみよう
-最終的には node, yarn が通ってれば多分大丈夫。
-
-```
+最終的には node, yarn, gitが通ってれば多分大丈夫。
+```sh
 node -v
 yarn -v
+git -v
 ```
 
-こいつも参考にしよう
+- nodeのインストール:
+[公式ページ](https://nodejs.org/ja/download/)
 
-[yarn をインストールする](https://qiita.com/suisui654/items/1b89446e03991c7c2c3d)
+- yarnのインストール:
+npmコマンドからインストールできる。[yarn をインストールする](https://qiita.com/suisui654/items/1b89446e03991c7c2c3d)
 
-もし Windows で権限がないって言われてしまったら
-[PowerShell の実行ポリシー変更 - Qiita](https://qiita.com/earthdiver1/items/b3f529c81f5892972a72)
+もしも Windows でyarnコマンドの際に権限がないって言われてしまったら [PowerShell の実行ポリシー変更 - Qiita](https://qiita.com/earthdiver1/items/b3f529c81f5892972a72)
+
+- gitのインストール
+gitのインストールおよびkey-genでssh鍵を作成し登録することを推奨！
+方法は自分で調べるか友達に聞いてね！
 
 ### 準備完了～ web アプリが立ち上がるまで
 
@@ -33,28 +38,22 @@ yarn -v
 
 以下はすべて`withyamada`ディレクトリ内で実行すること！
 
-```
+```sh
+git clone git@github.com:udoya/withyamada.git
+cd ./withyamada
 yarn install
 ```
 
 これによって yarn に書いておいた色々が install されるはず。今回使う vite もこれで入るはず。
 
-```
+```sh
 yarn dev
 ```
 
 でポート番号 5173 で動けば 準備完了
 `http://localhost:5173/` or `http://127.0.0.1:5173/` になるはず。
 
-抜ける時は ctrl + c で抜けよう。
-
-なお、
-
-```
-yarn dev --host
-```
-
-だと同じネットワーク内からアクセスできるようになる。
+抜ける時は sh内の強制終了(ctrl + c) で抜けよう。
 
 ## ブランチの切り方
 
